@@ -19,7 +19,7 @@ class TiebaImgCrawler(object):
     #获取html页面中的图片并存到path里
     def getImg(self, html, path):
         reg = r'<img class="BDE_Image".+src="(.+?\.jpg)"'    #有时候需要修改正则表达式
-        imgre = re.commypile(reg)
+        imgre = re.compile(reg)
         imglist = re.findall(imgre,html)
         for imgurl in imglist:
             bigurl = "http://imgsrc.baidu.com/forum/pic/item/" + imgurl.split('/')[-1]    #获取原图
