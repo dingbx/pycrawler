@@ -1,4 +1,4 @@
-# pypiccrawler
+# pycrawler
 python crawler
 
 1. Baidu Tieba picture crawler
